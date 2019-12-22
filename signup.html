@@ -1,0 +1,378 @@
+
+
+
+
+<html>
+  <head>
+    
+
+
+      
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <title>Sign up</title>
+    <style>
+      .head {
+        display: flex;
+        padding-left: 45%;
+      }
+      .container {
+        padding-left: 55%;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div>
+        <div class="head">
+            <center><legend>Register</legend></center>
+            <div class="container">
+              <label>Already have account ? </label>
+              <a href="./index.html" ><button class="btn btn-primary">
+                  Login
+                </button></a>
+              
+            </div>
+          </div>
+      <form class="form-horizontal" action="reg.php" method="POST" id="regForm" enctype="multipart/form-data">
+        <fieldset>
+          <!-- Form Name -->
+          
+
+          <!--<div class="form-group">
+              <label class="col-md-4 control-label" for="imagr">Photo</label>
+              <div class="col-md-4">
+                <input
+                  id="name"
+                  name="img"
+                  type="File"
+                  placeholder="Upload photo"
+                  class="form-control input-md"
+                  required=""
+                />
+                <span class="help-block">Image of User</span>
+              </div>
+            </div>-->
+
+          <!-- Text input-->
+
+          
+
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="name">Name</label>
+            <div class="col-md-4">
+              <input
+                id="name"
+                name="uname"
+                type="text"
+                placeholder="User Name"
+                class="form-control input-md"
+                required=""
+              />
+              <span class="help-block">Name of User</span>
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="phone">Phone</label>
+            <div class="col-md-4">
+              <input
+                id="phone"
+                name="number"
+                type="text"
+                placeholder="Phone Number"
+                class="form-control input-md"
+                required=""
+              />
+              <span class="help-block">Phone</span>
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="email">Email</label>
+            <div class="col-md-4">
+              <input
+                id="email"
+                name="email"
+                type="text"
+                placeholder="Email address"
+                class="form-control input-md"
+                required=""
+              />
+              <span class="help-block"
+                >Email will be used for notication messages</span
+              >
+            </div>
+          </div>
+
+          <!-- Password input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="password"
+              >Password
+            </label>
+            <div class="col-md-4">
+              <input
+                id="password"
+                name="psw1"
+                type="password"
+                placeholder="Password "
+                class="form-control input-md"
+                required=""
+              />
+              <span class="help-block"> Password </span>
+            </div>
+          </div>
+
+          <!-- Password input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="rpassword"
+              >Confirm:</label
+            >
+            <div class="col-md-4">
+              <input
+                id="rpassword"
+                name="psw2"
+                type="password"
+                placeholder="Password"
+                class="form-control input-md"
+                required=""
+              />
+              <span class="help-block">Retype password</span>
+            </div>
+          </div>
+
+          <!-- Text input-->
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="address"
+              >Address :</label
+            >
+            <div class="col-md-4">
+              <input
+                id="address"
+                name="addr"
+                type="text"
+                placeholder="Address"
+                class="form-control input-md"
+                required=""
+              />
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="city">City</label>
+            <div class="col-md-4">
+              <input
+                id="city"
+                name="city"
+                type="text"
+                placeholder="City"
+                class="form-control input-md"
+                required=""
+              />
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="state">State</label>
+            <div class="col-md-4">
+              <input
+                id="state"
+                name="state"
+                type="text"
+                placeholder="State"
+                class="form-control input-md"
+                required=""
+              />
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="zip">Zip Code</label>
+            <div class="col-md-4">
+              <input
+                id="zip"
+                name="zip"
+                type="text"
+                placeholder="Zip Code"
+                class="form-control input-md"
+                required=""
+              />
+            </div>
+          </div>
+          <!-- about hobbies ambition goal  -->
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="about"
+              >Write About You:</label
+            >
+            <div class="col-md-4">
+              <input
+                id="about"
+                name="about"
+                type="text"
+                placeholder="About You!"
+                class="form-control input-md"
+                required=""
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="hobby"
+              >Your Hobbies:</label
+            >
+            <div class="col-md-4">
+              <input
+                id="hobby"
+                name="hobby"
+                type="text"
+                placeholder="Hobbies"
+                class="form-control input-md"
+                required=""
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="ambition"
+              >Ambition</label
+            >
+            <div class="col-md-4">
+              <input
+                id="ambition"
+                name="ambi"
+                type="text"
+                placeholder="Ambition"
+                class="form-control input-md"
+                required=""
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="goals">Goals</label>
+            <div class="col-md-4">
+              <input
+                id="goals"
+                name="goal"
+                type="text"
+                placeholder="Goals"
+                class="form-control input-md"
+                required=""
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="goals">Profile Photo:</label>
+
+              <div class="col-md-4">
+                <input
+                  id="file_upload"
+                  name="file_upload"
+                  type="file"
+                  class="form-control input-md"
+                  required=""
+                />
+              </div>
+            </div>
+          <!-- <div class="form-group">
+            <label class="col-md-4 control-label" for="photo"
+              >Profile Photo</label
+            >
+            <div class="col-md-4">
+              <label class="btn btn-primary btn-file">
+                Upload your Photo
+                <input
+                  type="file"
+                  name="phtot"
+                  style="display: none;"
+                  required=""
+                />
+              </label>
+            </div>
+          </div> -->
+
+          <!-- Button (Double) -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="save"></label>
+            <div class="col-md-8">
+              <button
+                id="save"
+                type="submit"
+                name="save"
+                class="btn btn-success"
+              >
+                Signup
+              </button>
+            </div>
+          </div>
+        
+
+        </fieldset>
+      </form>
+    </div>
+
+    <script>
+      var password = document.getElementById("password"),
+        confirm_password = document.getElementById("rpassword");
+
+      function validatePassword() {
+        if (password.value != confirm_password.value) {
+          confirm_password.setCustomValidity("Passwords Don't Match");
+        } else {
+          confirm_password.setCustomValidity("");
+        }
+      }
+
+      password.onchange = validatePassword;
+      confirm_password.onkeyup = validatePassword;
+    </script>
+  </body>
+</html>
+
+<!-- 
+<div class="container">
+  <div clas="row">
+      <div class="col-sm-12">
+  <form action="reg.php" method="GET" id="regForm">
+        
+          <div class="container">
+            <label for="uname"><b>UserName</b></label>
+            <input type="text" placeholder="Enter YourName" name="uname" required>
+
+            <label for="number"><b>Your Number</b></label><br>
+            <input type="number" placeholder="Enter Your Number"  style="width:100%;height:55px" name="number" required><br>
+            
+            <label for="email"><b>Email</b></label><br>
+            <input type="email" placeholder="Enter Your Email"  style="width:100%;height:55px" name="email" required><br>
+            
+        
+            <label for="psw"><b>Password</b></label><br>
+            <input type="password" id="password" placeholder="Enter Password"  style="width:100%;height:55px" name="psw1" required><br>
+            <label for="psw"><b>Confirm Password</b></label><br>
+            <input type="password" id="confirm_password" placeholder="Re-type Password"  style="width:100%;height:55px" name="psw2" required><br>
+        
+            <button type="submit" style="width:30%" >Submit</button>
+
+          </div>
+        
+          
+        </form>
+        <div class="container" style="background-color:#f1f1f1">
+          <label>Already have account ? </label>
+          <a href="./index.html"><button type="submit" style="width:30%" >Login</button></a>
+      </div>
+      </div>
+      </div>
+      </div> -->

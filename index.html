@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./js/main.js" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper fadeInDown">
+      <div id="formContent">
+        <!-- Tabs Titles -->
+
+        <!-- Icon -->
+        <div class="fadeIn first">
+          <i class="fas fa-lock"></i>
+          <span>Login</span>
+        </div>
+
+        <!-- Login Form -->
+        <form action="signin.php" method="post" id="loginForm">
+          <input
+            type="text"
+            id="name"
+            class="fadeIn second"
+            name="uname"
+            placeholder="username"
+            required
+          
+          />
+          <input
+            type="password"
+            id="pass"
+            class="fadeIn third"
+            name="psw1"
+            placeholder="password"
+            required
+          />
+          <input type="submit" class="fadeIn fourth" value="Log In" />
+        </form>
+
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+          <a class="underlineHoForgot Password?ver" href="#"
+            >Forgot Password?</a
+          >
+        </div>
+        <div id="formFooter">
+          <a class="underlineHover" href="signup.html"
+            ><button class="btn btn-primary">
+              <i class="fas fa-user-plus"></i> Register Here
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
